@@ -1,0 +1,15 @@
+debug/bagna.o
+debug/bron.o
+debug/czarny_zamek.o
+debug/generator.o
+debug/komnaty.o
+debug/lokalizacja.o
+debug/main.o
+debug/mainwindow.o
+debug/mikstura.o
+debug/nawiedzone_wlosci.o
+debug/obiekt.o
+debug/opuszczone_wioski.o
+debug/przedmiot.o
+debug/wrog.o
+debug/moc_mainwindow.o
