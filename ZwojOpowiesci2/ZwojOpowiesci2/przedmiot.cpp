@@ -29,6 +29,7 @@ Przedmiot::Przedmiot(std::string Nazwa, std::string Opis, float Waga, int Cena, 
     opis=Opis;
     waga=Waga;
     cena=Cena;
+    czymagiczny=CzyMagiczny;
     int p;
     if(rand()%2==0)
     {
