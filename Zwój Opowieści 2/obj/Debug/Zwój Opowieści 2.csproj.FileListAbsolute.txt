@@ -8,3 +8,14 @@ C:\Users\Serwis\source\repos\Zwój Opowieści 2\Zwój Opowieści 2\obj\Debug\Zw�
 C:\Users\Serwis\source\repos\Zwój Opowieści 2\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.CoreCompileInputs.cache
 C:\Users\Serwis\source\repos\Zwój Opowieści 2\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.exe
 C:\Users\Serwis\source\repos\Zwój Opowieści 2\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.pdb
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\bin\Debug\Zwój Opowieści 2.exe.config
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\bin\Debug\Zwój Opowieści 2.exe
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\bin\Debug\Zwój Opowieści 2.pdb
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.AssemblyReference.cache
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.SuggestedBindingRedirects.cache
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.Form1.resources
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.Properties.Resources.resources
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.GenerateResource.cache
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.CoreCompileInputs.cache
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.exe
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.pdb
