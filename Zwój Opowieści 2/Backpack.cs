@@ -36,5 +36,13 @@ namespace Zwój_Opowieści_2
             }
             
         }
+        public void remove(int index)
+        {
+            items.RemoveAt(index);
+        }
+        public void clear()
+        {
+            items.Clear();
+        }
     }
 }

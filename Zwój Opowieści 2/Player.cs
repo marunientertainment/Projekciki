@@ -12,6 +12,6 @@ namespace Zwój_Opowieści_2
         public int mana;
         public int xp;
         public int lvl;
-        Backpack backpack = new Backpack(5);
+        Backpack backpack = new Backpack(5f);
     }
 }
