@@ -32,6 +32,7 @@ namespace Zwój_Opowieści_2
                 }
                 else
                 {
+                    xp = value;
                     xp = xp - lvl * 50;
                     lvl++;
                 }
