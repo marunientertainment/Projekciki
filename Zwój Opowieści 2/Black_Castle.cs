@@ -8,11 +8,21 @@ namespace Zwój_Opowieści_2
 {
     public class Black_Castle:Location
     {
-        public Black_Castle(string Name, string Description, int Level) : base(Name, Description, Level)
+        public Black_Castle(string Name, string Description, int Levels, bool Variant) : base(Name, Description, Levels, Variant)
         {
             name = Name;
             description = Description;
-            level = Level;
+            name = Name;
+            description = Description;
+            variant = Variant;
+            if (variant)
+            {
+                levels = (int)(1.5f * Levels);
+            }
+            else
+            {
+                levels = Levels;
+            }
         }
         public new MyObject generate()
         {
