@@ -17,11 +17,7 @@ namespace Zwój_Opowieści_2
         {
             InitializeComponent();
             richTextBox1.ReadOnly=true;
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
+            richTextBox2.ReadOnly = true;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
