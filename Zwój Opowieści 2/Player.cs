@@ -13,11 +13,41 @@ namespace Zwój_Opowieści_2
         public int max_mana = 100;
         public int mana;
         private int xp=0;
-        private int lvl=1;
-        public int strenght_points=0;
-        public int mana_points=0;
+        public int lvl=1;
+        public float strenght_points=1;
+        public float mana_points =1;
         public int life_points=0;
-        Backpack backpack = new Backpack(5f);
+        public float maxcapacity=5;
+        public List<Item> backpack = new List<Item>();
+        public float capacity()
+        {
+            float weight = 0;
+            foreach (Item n in backpack)
+            {
+                weight = n.weight;
+            }
+            return weight;
+        }
+        public bool add(Item item)
+        {
+            if (capacity() + item.weight <= maxcapacity)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+        public void remove(int index)
+        {
+            backpack.RemoveAt(index);
+        }
+        public void clear()
+        {
+            backpack.Clear();
+        }
         public int Xp
         {
             get
@@ -26,15 +56,21 @@ namespace Zwój_Opowieści_2
             }
             set
             {
-                if (xp < lvl * 50)
+                if (value < lvl * 50)
                 {
                     xp = value;
                 }
-                else
+                else if(value >= lvl * 50)
                 {
                     xp = value;
                     xp = xp - lvl * 50;
                     lvl++;
+                    LvlUp form = new LvlUp();
+                    form.Show();
+                }
+                else if(value==0)
+                {
+                    xp = 0;
                 }
             }
         }
@@ -43,8 +79,9 @@ namespace Zwój_Opowieści_2
             life = max_life;
             mana = max_mana;
         }
-        public Player(int Max_Life, int Max_Mana, int Xp, int Lvl, int Strenght_points, int Mana_points, int Life_points)
+        public Player(int Max_Life, int Max_Mana, int Xp, int Lvl, int Strenght_points, int Mana_points, int Life_points, float MaxCapacit)
         {
+            maxcapacity = MaxCapacit;
             max_life = Max_Life;
             max_mana = Max_Mana;
             life = max_life;

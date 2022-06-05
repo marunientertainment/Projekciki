@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Zwój_Opowieści_2
 {
-    public class Location: MyObject
+    public abstract class Location: MyObject
     {
-        public int levels;
-        public bool variant;
-        public bool finished;//for future
+        public int levels=0;
+        public bool variant=false;
+        public bool finished = false;//for future
+        public Random rand = new Random();
         public Location(string Name, string Description, int Levels, bool Variant)
         {
             name = Name;
@@ -26,9 +27,13 @@ namespace Zwój_Opowieści_2
             }
 
         }
+        public Location()
+        {
+
+        }
         public MyObject generate()
         {
-            Enemy z = new Enemy("imie", "opis", 5, 5, 5);//just testing (to remove)
+            Enemy z = new Enemy("tu jestem", "opis", 5, 5, 5);//just testing (to remove)
             return z;
         }
     }

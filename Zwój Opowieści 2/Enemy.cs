@@ -19,7 +19,7 @@ namespace Zwój_Opowieści_2
             damage = Damage;
             xp = Xp;
         }
-        public string Indroduce()
+        public string Introduce()
         {
             return "Jest to " + name + " " + description + "(ma " + life + "punkow życia i bije za" + damage + ")";
         }

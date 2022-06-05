@@ -48,11 +48,14 @@ namespace Zwój_Opowieści_2
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(636, 28);
+            this.richTextBox1.Location = new System.Drawing.Point(636, 67);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(266, 301);
             this.richTextBox1.TabIndex = 0;
@@ -61,7 +64,7 @@ namespace Zwój_Opowieści_2
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(636, 335);
+            this.button1.Location = new System.Drawing.Point(636, 374);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 23);
             this.button1.TabIndex = 1;
@@ -72,16 +75,16 @@ namespace Zwój_Opowieści_2
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 28);
+            this.comboBox1.Location = new System.Drawing.Point(12, 67);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 21);
+            this.comboBox1.Size = new System.Drawing.Size(262, 21);
             this.comboBox1.TabIndex = 2;
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(229, 28);
+            this.richTextBox2.Location = new System.Drawing.Point(280, 67);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(401, 173);
+            this.richTextBox2.Size = new System.Drawing.Size(350, 173);
             this.richTextBox2.TabIndex = 3;
             this.richTextBox2.Text = "";
             // 
@@ -105,11 +108,11 @@ namespace Zwój_Opowieści_2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(418, 473);
+            this.label1.Location = new System.Drawing.Point(384, 473);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 25);
+            this.label1.Size = new System.Drawing.Size(145, 25);
             this.label1.TabIndex = 6;
-            this.label1.Text = "życie";
+            this.label1.Text = "Życie";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -118,17 +121,17 @@ namespace Zwój_Opowieści_2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(418, 419);
+            this.label2.Location = new System.Drawing.Point(387, 419);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 25);
+            this.label2.Size = new System.Drawing.Size(142, 25);
             this.label2.TabIndex = 7;
-            this.label2.Text = "mana";
+            this.label2.Text = "Mana";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Location = new System.Drawing.Point(730, 335);
+            this.button2.Location = new System.Drawing.Point(730, 374);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 23);
             this.button2.TabIndex = 8;
@@ -138,12 +141,13 @@ namespace Zwój_Opowieści_2
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(814, 335);
+            this.button3.Location = new System.Drawing.Point(814, 374);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 23);
             this.button3.TabIndex = 9;
             this.button3.Text = "Użyj/Opis";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -153,6 +157,7 @@ namespace Zwój_Opowieści_2
             this.button4.TabIndex = 10;
             this.button4.Text = "Użyj";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -162,6 +167,7 @@ namespace Zwój_Opowieści_2
             this.button5.TabIndex = 11;
             this.button5.Text = "Pokarz opis";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -171,6 +177,7 @@ namespace Zwój_Opowieści_2
             this.button6.TabIndex = 12;
             this.button6.Text = "Wyrzuć";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -180,6 +187,7 @@ namespace Zwój_Opowieści_2
             this.button7.TabIndex = 13;
             this.button7.Text = "Reset";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label3
             // 
@@ -187,7 +195,7 @@ namespace Zwój_Opowieści_2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(81, 0);
+            this.label3.Location = new System.Drawing.Point(111, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 25);
             this.label3.TabIndex = 14;
@@ -200,7 +208,7 @@ namespace Zwój_Opowieści_2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(391, 0);
+            this.label4.Location = new System.Drawing.Point(418, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 25);
             this.label4.TabIndex = 15;
@@ -213,7 +221,7 @@ namespace Zwój_Opowieści_2
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(704, 0);
+            this.label5.Location = new System.Drawing.Point(704, 39);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 25);
             this.label5.TabIndex = 16;
@@ -228,7 +236,7 @@ namespace Zwój_Opowieści_2
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.Location = new System.Drawing.Point(-1, 419);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 25);
+            this.label6.Size = new System.Drawing.Size(242, 25);
             this.label6.TabIndex = 17;
             this.label6.Text = "Miejsce w plecaku";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -246,9 +254,42 @@ namespace Zwój_Opowieści_2
             this.label7.Text = "Autor: Marek Pierwocha";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(2, 26);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(900, 10);
+            this.progressBar3.TabIndex = 19;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(333, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(251, 18);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Doświadczenie";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(356, 299);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(88, 23);
+            this.button8.TabIndex = 21;
+            this.button8.Text = "Dalej";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(914, 536);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.progressBar3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -269,13 +310,13 @@ namespace Zwój_Opowieści_2
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Form1";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -295,6 +336,9 @@ namespace Zwój_Opowieści_2
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button8;
     }
 }
 
