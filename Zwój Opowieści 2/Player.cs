@@ -8,7 +8,7 @@ namespace Zwój_Opowieści_2
 {
     public class Player
     {
-        public int max_life = 100;
+        public float max_life = 100;
         public int life;
         public int max_mana = 100;
         public int mana;
@@ -18,6 +18,7 @@ namespace Zwój_Opowieści_2
         public float mana_points =1;
         public int life_points=0;
         public float maxcapacity=5;
+        public float mana_consumption = 1;
         public List<Item> backpack = new List<Item>();
         public float capacity()
         {
@@ -76,15 +77,15 @@ namespace Zwój_Opowieści_2
         }
         public Player()
         {
-            life = max_life;
+            life = (int)max_life;
             mana = max_mana;
         }
-        public Player(int Max_Life, int Max_Mana, int Xp, int Lvl, int Strenght_points, int Mana_points, int Life_points, float MaxCapacit)
+        public Player(float Max_Life, int Max_Mana, int Xp, int Lvl, int Strenght_points, int Mana_points, int Life_points, float MaxCapacit)
         {
             maxcapacity = MaxCapacit;
             max_life = Max_Life;
             max_mana = Max_Mana;
-            life = max_life;
+            life = (int)max_life;
             mana = max_mana;
             xp = Xp;
             lvl = Lvl;
@@ -92,21 +93,21 @@ namespace Zwój_Opowieści_2
             mana_points = Mana_points;
             life_points = Life_points;
         }
-        public Player(int Max_Life, int Max_Mana, int Strenght_points, int Mana_points, int Life_points)
+        public Player(float Max_Life, int Max_Mana, int Strenght_points, int Mana_points, int Life_points)
         {
             max_life = Max_Life;
             max_mana = Max_Mana;
-            life = max_life;
+            life = (int)max_life;
             mana = max_mana;
             strenght_points = Strenght_points;
             mana_points = Mana_points;
             life_points = Life_points;
         }
-        public Player(int Max_Life, int Max_Mana)
+        public Player(float Max_Life, int Max_Mana)
         {
             max_life = Max_Life;
             max_mana = Max_Mana;
-            life = max_life;
+            life = (int)max_life;
             mana = max_mana;
         }
     }

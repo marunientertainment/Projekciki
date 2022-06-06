@@ -30,3 +30,4 @@ C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój 
 C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.exe
 C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.pdb
 C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.LvlUp.resources
+C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.SelectingLvl.resources

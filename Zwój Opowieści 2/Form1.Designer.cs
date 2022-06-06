@@ -309,6 +309,8 @@ namespace Zwój_Opowieści_2
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
@@ -316,8 +318,6 @@ namespace Zwój_Opowieści_2
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
@@ -339,6 +339,7 @@ namespace Zwój_Opowieści_2
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button8;
+        public System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

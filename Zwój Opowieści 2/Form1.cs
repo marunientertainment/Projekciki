@@ -13,9 +13,9 @@ namespace Zwój_Opowieści_2
     public partial class Form1 : Form
     {
         int step = 0;
-        int current_location =0;
+        public static int current_location =0;
         Random rand = new Random();
-        Selector selector = new Selector();
+        public static Selector selector = new Selector();
         //List<Item> item_list = new List<Item>();//for balance 
         List<MyObject> object_list = new List<MyObject>();//balance
         //List<Enemy> enemy_list = new List<Enemy>();//for balance
@@ -23,7 +23,7 @@ namespace Zwój_Opowieści_2
 
         public void Life_Update()
         {
-            progressBar1.Value = (int)(((float)player.life / (float)(player.max_life + player.life_points)) * 100);//life bar
+            progressBar1.Value = (int)((((float)player.life) / player.max_life) * 100);//life bar
             label1.Text = player.life + "/" + player.max_life + " Życie";//life label
         }
 
@@ -48,7 +48,7 @@ namespace Zwój_Opowieści_2
         {
             player.backpack.Clear();
             player.life = 100;
-            player.life_points = 0;
+            player.life_points = 1;
             player.mana = 100;
             player.mana_points = 1;
             player.maxcapacity = 5;
@@ -57,6 +57,7 @@ namespace Zwój_Opowieści_2
             player.strenght_points = 1;
             player.Xp = 0;
             player.lvl = 1;
+            player.mana_consumption = 1;
             current_location = 0;
             richTextBox1.Clear();
             richTextBox2.Clear();
@@ -90,7 +91,7 @@ namespace Zwój_Opowieści_2
 
         private void button1_Click_1(object sender, EventArgs e)//Next
         {            
-            if (current_location >=4)
+            if (current_location >=8)
             {
                 richTextBox2.Text = "WYGRAŁEŚ!!!";
                 button1.Enabled = false;
@@ -147,8 +148,10 @@ namespace Zwój_Opowieści_2
             else
             {
                 step = 0;
-                current_location++;
-                richTextBox1.Text += "Wchodzisz do " + selector.Name(current_location) +"\n";
+                SelectingLvl selectingLvl = new SelectingLvl();
+                selectingLvl.Show();
+                richTextBox1.Text = "";
+                //richTextBox1.Text += "Wchodzisz do " + selector.Name(current_location)+"\n";
             }
             button2.Enabled = true;
         }
@@ -214,7 +217,7 @@ namespace Zwój_Opowieści_2
                     {
                         if ((player.life + mixture.value) > player.max_life)
                         {
-                            player.life = player.max_life;
+                            player.life = (int)player.max_life;
                         }
                         else
                         {
@@ -245,7 +248,7 @@ namespace Zwój_Opowieści_2
                                 }
                                 else
                                 {
-                                    player.mana -= weapon.consumption;
+                                    player.mana -= (int)Math.Ceiling(weapon.consumption* player.mana_consumption);
                                     enemy.life -= (int)(weapon.damage * player.mana_points);
                                     richTextBox1.Text += "Za atakowano za " + (int)(weapon.damage * player.mana_points) + "\n";
                                 }                    
@@ -378,7 +381,7 @@ namespace Zwój_Opowieści_2
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //richTextBox1.Text += loc[0].generate().name + "\n";
+            player.Xp += 10;
         }//god button
     }
 }

@@ -30,7 +30,7 @@ namespace Zwój_Opowieści_2
                 p = 1;
             }
             float pf = (rand.Next(1, 30) + 1) / 100f;
-            value = price + (int)(p * pf * price);
+            value = price + (int)Math.Ceiling(p * pf * price);
         }
         public string Introduce()
         {
