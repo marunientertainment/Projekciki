@@ -15,6 +15,11 @@ namespace Zwój_Opowieści_2
         public SelectingLvl()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            richTextBox1.ReadOnly = true;
         }
 
         private void button1_Click(object sender, EventArgs e)

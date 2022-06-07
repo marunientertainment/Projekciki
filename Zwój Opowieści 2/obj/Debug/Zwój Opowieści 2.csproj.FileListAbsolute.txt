@@ -31,3 +31,16 @@ C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój 
 C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.pdb
 C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.LvlUp.resources
 C:\Users\Serwis\source\repos\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.SelectingLvl.resources
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\bin\Debug\Zwój Opowieści 2.exe.config
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\bin\Debug\Zwój Opowieści 2.exe
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\bin\Debug\Zwój Opowieści 2.pdb
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.AssemblyReference.cache
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.SuggestedBindingRedirects.cache
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.Form1.resources
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.LvlUp.resources
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.Properties.Resources.resources
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.SelectingLvl.resources
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.GenerateResource.cache
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.CoreCompileInputs.cache
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.exe
+D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.pdb

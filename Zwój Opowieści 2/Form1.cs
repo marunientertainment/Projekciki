@@ -12,7 +12,7 @@ namespace Zwój_Opowieści_2
 {
     public partial class Form1 : Form
     {
-        int step = 0;
+        int step = 1;
         public static int current_location =0;
         Random rand = new Random();
         public static Selector selector = new Selector();
@@ -59,10 +59,11 @@ namespace Zwój_Opowieści_2
             player.lvl = 1;
             player.mana_consumption = 1;
             current_location = 0;
+            step = 1;
             richTextBox1.Clear();
             richTextBox2.Clear();
             comboBox1.Items.Clear();
-            Weapon sword = new Weapon("Miecz", "opis", 0.1f, 10, 10, 0, false);
+            Weapon sword = new Weapon("Miecz", "opis", 0.1f, 10, 0, 0, false);
             Weapon fireball = new Weapon("księga kuli ognia", "potezne zaklecie wystrzeliwujace kule ognia", 0.2f, 0, 10, 15, true);
             player.backpack.Add(sword);
             player.backpack.Add(fireball);
@@ -86,6 +87,10 @@ namespace Zwój_Opowieści_2
             InitializeComponent();
             richTextBox1.ReadOnly=true;
             richTextBox2.ReadOnly = true;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Reset();
         }
 
@@ -102,10 +107,9 @@ namespace Zwój_Opowieści_2
                 button6.Enabled = false;
             }
             
-            if (step < selector.Levels(current_location))
+            if (step <= selector.Levels(current_location))
             {
-                step++;
-                object_list.Add(selector.Generate(current_location));
+                object_list.Add(selector.Generate(current_location,step));
                 richTextBox1.Text += "Krok " + step + "\n";
                 if ((player.mana + 5) > player.max_mana)
                 {
@@ -147,12 +151,13 @@ namespace Zwój_Opowieści_2
             }
             else
             {
-                step = 0;
+                step = 1;
                 SelectingLvl selectingLvl = new SelectingLvl();
-                selectingLvl.Show();
+                selectingLvl.ShowDialog();
                 richTextBox1.Text = "";
                 //richTextBox1.Text += "Wchodzisz do " + selector.Name(current_location)+"\n";
             }
+            step++;
             button2.Enabled = true;
         }
 
@@ -304,6 +309,7 @@ namespace Zwój_Opowieści_2
             await Task.Delay(50);
             if (player.life <= 0)
             {
+
                 richTextBox2.Clear();
                 richTextBox2.Text = "UMARŁEŚ!!!";
                 progressBar1.Value = 0;
@@ -381,7 +387,15 @@ namespace Zwój_Opowieści_2
 
         private void button8_Click(object sender, EventArgs e)
         {
-            player.Xp += 10;
+            for(int i=0;i<300;i++)
+            {
+                int r = rand.Next(1, 101);
+                if (r==100)
+                {
+                    richTextBox1.Text += r + "\n";
+                }
+                
+            }
         }//god button
     }
 }

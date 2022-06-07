@@ -15,6 +15,10 @@ namespace Zwój_Opowieści_2
         public LvlUp()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void button1_Click(object sender, EventArgs e)

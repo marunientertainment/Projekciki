@@ -67,7 +67,7 @@ namespace Zwój_Opowieści_2
                     xp = xp - lvl * 50;
                     lvl++;
                     LvlUp form = new LvlUp();
-                    form.Show();
+                    form.ShowDialog();
                 }
                 else if(value==0)
                 {
