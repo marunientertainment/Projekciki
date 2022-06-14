@@ -44,3 +44,5 @@ D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowi
 D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.csproj.CoreCompileInputs.cache
 D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.exe
 D:\VisualStudioWorkspace\263645\zwoj\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój Opowieści 2.pdb
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.LvlUp.resources
+D:\263645\Projekciki-main\Projekciki-main\Zwój Opowieści 2\obj\Debug\Zwój_Opowieści_2.SelectingLvl.resources

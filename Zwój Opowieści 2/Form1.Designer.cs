@@ -50,7 +50,11 @@ namespace Zwój_Opowieści_2
             this.label7 = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.label8 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -145,7 +149,7 @@ namespace Zwój_Opowieści_2
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 23);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Użyj/Opis";
+            this.button3.Text = "Opis";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -274,20 +278,59 @@ namespace Zwój_Opowieści_2
             this.label8.Text = "Doświadczenie";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button8
+            // label9
             // 
-            this.button8.Location = new System.Drawing.Point(356, 299);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(88, 23);
-            this.button8.TabIndex = 21;
-            this.button8.Text = "Dalej";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(277, 254);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Statystyki";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(277, 276);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(141, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Możnik obrażeń magicznych";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(277, 323);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 13);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Mnożnik obrarzeń";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(277, 346);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 13);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Gdzie jestem:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(277, 299);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(170, 13);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Mnożnik redukcji konsumpcji magii";
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(914, 536);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.progressBar3);
             this.Controls.Add(this.label7);
@@ -312,8 +355,10 @@ namespace Zwój_Opowieści_2
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.Text = "Zwój Opowieści 2";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -338,8 +383,12 @@ namespace Zwój_Opowieści_2
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button8;
         public System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
 

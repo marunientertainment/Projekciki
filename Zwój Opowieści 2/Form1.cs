@@ -31,6 +31,9 @@ namespace Zwój_Opowieści_2
         {
             progressBar2.Value = (int)(((float)player.mana / (float)(player.max_mana)) * 100);//mana bar
             label2.Text = player.mana + "/" + player.max_mana + " Mana";//mana label
+            label10.Text = "Mnożnik obrarzeń magichnych " +player.mana_points*100+"%";
+            label14.Text = "Mnożnik redukcji konsumpcji magii " + (int)(100 - player.mana_consumption * 100) + "%";
+
         }
 
         public void Xp_Update()
@@ -42,6 +45,16 @@ namespace Zwój_Opowieści_2
         public void Backpack_Update()
         {
             label6.Text = "Miejsce w plecaku " + player.capacity() + "/" + player.maxcapacity + " Kg ";//backpack capacity label
+        }
+
+        public void Damage_Update()
+        {
+            label12.Text = "Mnoznik obrerzeń " + player.strenght_points * 100 + "%";
+        }
+
+        public void Location_Update()
+        {
+            label13.Text = "Twoja lokalizacja to " + selector.Name(current_location);
         }
 
         public void Reset()
@@ -63,7 +76,7 @@ namespace Zwój_Opowieści_2
             richTextBox1.Clear();
             richTextBox2.Clear();
             comboBox1.Items.Clear();
-            Weapon sword = new Weapon("Miecz", "opis", 0.1f, 10, 0, 0, false);
+            Weapon sword = new Weapon("Miecz", "opis", 0.1f, 10, 20, 0, false);
             Weapon fireball = new Weapon("księga kuli ognia", "potezne zaklecie wystrzeliwujace kule ognia", 0.2f, 0, 10, 15, true);
             player.backpack.Add(sword);
             player.backpack.Add(fireball);
@@ -75,6 +88,8 @@ namespace Zwój_Opowieści_2
             Mana_Update();
             Xp_Update();
             Backpack_Update();
+            Damage_Update();
+            Location_Update();
             button1.Enabled = true;
             button2.Enabled = true;
             button3.Enabled = true;
@@ -87,26 +102,15 @@ namespace Zwój_Opowieści_2
             InitializeComponent();
             richTextBox1.ReadOnly=true;
             richTextBox2.ReadOnly = true;
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            MaximizeBox = false;
-            MinimizeBox = false;
-            StartPosition = FormStartPosition.CenterScreen;
+            FormBorderStyle = FormBorderStyle.FixedDialog;//internet
+            MaximizeBox = false;//internet
+            MinimizeBox = false;//internet
+            StartPosition = FormStartPosition.CenterScreen;//internet
             Reset();
         }
 
         private void button1_Click_1(object sender, EventArgs e)//Next
-        {            
-            if (current_location >=8)
-            {
-                richTextBox2.Text = "WYGRAŁEŚ!!!";
-                button1.Enabled = false;
-                button2.Enabled = false;
-                button3.Enabled = false;
-                button4.Enabled = false;
-                button5.Enabled = false;
-                button6.Enabled = false;
-            }
-            
+        {                       
             if (step <= selector.Levels(current_location))
             {
                 object_list.Add(selector.Generate(current_location,step));
@@ -247,7 +251,7 @@ namespace Zwój_Opowieści_2
                             Weapon weapon = (Weapon)player.backpack[comboBox1.SelectedIndex];                            
                             if(weapon.ismagic)
                             {
-                                if((player.mana - weapon.consumption)<0)
+                                if((player.mana - weapon.consumption)<0)////!!!!!
                                 {
                                     richTextBox2.Text = "Zamało many!";
                                 }
@@ -306,6 +310,8 @@ namespace Zwój_Opowieści_2
             Mana_Update();
             Xp_Update();
             Backpack_Update();
+            Damage_Update();
+            Location_Update();
             await Task.Delay(50);
             if (player.life <= 0)
             {
@@ -384,18 +390,5 @@ namespace Zwój_Opowieści_2
                 comboBox1.Items.Add(item.name);
             }
         }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            for(int i=0;i<300;i++)
-            {
-                int r = rand.Next(1, 101);
-                if (r==100)
-                {
-                    richTextBox1.Text += r + "\n";
-                }
-                
-            }
-        }//god button
     }
 }
